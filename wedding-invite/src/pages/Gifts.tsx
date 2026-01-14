@@ -9,7 +9,7 @@ export default function Gifts() {
       <div className="bg-[#F3E9DF] p-6 rounded-xl">
         <h2 className="font-semibold">Bank Details</h2>
         <p>Bank: ABC Bank</p>
-        <p>Account Name: John & Jane Doe</p>
+        <p>Account Name: Julie May Doyo Tudas</p>
         <p>Account Number: 1234 5678</p>
       </div>
 

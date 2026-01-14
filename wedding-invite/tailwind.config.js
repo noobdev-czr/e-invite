@@ -7,6 +7,10 @@ module.exports = {
         blush: "#E6CFC2",
         sage: "#D9E3D4",
         gold: "#C9A24D"
+      },
+      fontFamily: {
+      serif: ['"Playfair Display"', 'serif'],
+      body: ['"Cormorant Garamond"', 'serif']
       }
     }
   },
