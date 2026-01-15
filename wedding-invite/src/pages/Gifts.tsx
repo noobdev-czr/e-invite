@@ -16,7 +16,6 @@ export default function Gifts() {
         ← Back
       </button>
 
-
       <h1 className="text-3xl font-serif text-center">
         With Love & Gratitude
       </h1>
