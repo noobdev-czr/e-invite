@@ -1,11 +1,21 @@
 import { useState } from "react";
 import { Qr1, Qr2 } from "../assets/images";
 import ImageViewer from "../components/ImageViewer";
+import { useNavigate } from "react-router-dom";
 
 export default function Gifts() {
     const [activeImage, setActiveImage] = useState<string | null>(null);
+     const navigate = useNavigate();
   return (
     <div className="max-w-4xl mx-auto px-4 py-10 space-y-8">
+
+      <button
+        onClick={() => navigate("/public")}
+        className="mb-6 self-start px-5 py-2 rounded-full border border-gold text-gold hover:bg-gold hover:text-white transition"
+      >
+        ← Back
+      </button>
+
 
       <h1 className="text-3xl font-serif text-center">
         With Love & Gratitude

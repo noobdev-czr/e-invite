@@ -4,10 +4,18 @@ import './index.css'
 import App from './App.tsx'
 import React from 'react'
 import "./index.css";
+import { HashRouter } from 'react-router-dom'
 
 
-createRoot(document.getElementById('root')!).render(
+// createRoot(document.getElementById('root')!).render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+// )
+createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <HashRouter>
+      <App />
+    </HashRouter>
+  </React.StrictMode>
+);
