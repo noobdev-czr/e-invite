@@ -155,12 +155,11 @@ export default function LandingPage({ showRSVP }: Props) {
         title="Ceremony Location"
         className="w-full h-32"
         loading="lazy"
-        src="https://www.google.com/maps?q=Dubai%20Marina&output=embed"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.870221963295!2d55.131246687974404!3d25.07238742052868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f1354bd8d17b5%3A0x407c9745d6d64963!2sDubai%20Marina%20Yacht%20Club!5e0!3m2!1sen!2sus!4v1768477903852!5m2!1sen!2sus" 
       />
     </div>
   </div>
 </div>
-
 
 
 <div
