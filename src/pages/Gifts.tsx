@@ -4,8 +4,8 @@ import ImageViewer from "../components/ImageViewer";
 import { useNavigate } from "react-router-dom";
 
 export default function Gifts() {
-    const [activeImage, setActiveImage] = useState<string | null>(null);
-        const navigate = useNavigate();
+  const [activeImage, setActiveImage] = useState<string | null>(null);
+  const navigate = useNavigate();
   return (
     <div className="max-w-4xl mx-auto px-4 py-10 space-y-8">
       <button
@@ -14,19 +14,18 @@ export default function Gifts() {
       >
         ← Back
       </button>
-      <h1 className="text-3xl font-serif text-center">
-        With Love & Gratitude
-      </h1>
+      <h1 className="text-3xl font-serif text-center">With Love & Gratitude</h1>
 
       <div className="bg-[#F3E9DF] p-6 rounded-xl">
         <h2 className="font-semibold">Bank Details</h2>
-        <p>Bank: First Abu Dhabi Bank PJSC</p>
+        <p>Bank: Emirates NBD</p>
         <p>Account Name: JULIE MAY DOYO TUDAS</p>
-        <p>Account Number: 1656004001712018</p>
-        <p>Savings Account: NBADAEAAXXX</p>
-        <p>IBAN: AE250351656004001712018</p>
-        <p>SWIFT  CODE: NBADAEAAXXX</p>
-        <p>Currency: NBADAEAAXXX</p>
+        <p>Account Number: 1015780969401</p>
+        <p>Account TYPE: CURRENT ACCOUNT</p>
+        <p>IBAN: AE720260001015780969401</p>
+        <p>SWIFT CODE: EBILAEAD</p>
+        <p>CURRENCY: AED</p>
+        <p>ROUTING NUMBER: 202620103</p>
       </div>
 
       <div className="bg-[#E6D3C2] p-6 rounded-xl text-center">
@@ -36,8 +35,8 @@ export default function Gifts() {
         </div> */}
         <div className="relative z-10 flex flex-col items-center justify-center p-6">
           <div
-              onClick={() => setActiveImage(Qr1)}
-              className="
+            onClick={() => setActiveImage(Qr1)}
+            className="
                 h-40 md:h-48
                 w-full max-w-xs
                 rounded-xl
@@ -48,8 +47,8 @@ export default function Gifts() {
                 transition
                 pt-2
               "
-              style={{ backgroundImage: `url(${Qr1})` }}
-            />
+            style={{ backgroundImage: `url(${Qr1})` }}
+          />
         </div>
         <div className="relative z-10 flex flex-col items-center justify-center p-6">
           <div
@@ -69,13 +68,10 @@ export default function Gifts() {
           />
         </div>
       </div>
-      
-            {activeImage && (
-              <ImageViewer
-                src={activeImage}
-                onClose={() => setActiveImage(null)}
-              />
-            )}
+
+      {activeImage && (
+        <ImageViewer src={activeImage} onClose={() => setActiveImage(null)} />
+      )}
     </div>
   );
 }
